@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Teacher Feedback Form</title>
+</head>
+<body>
+    <h2>Teacher Feedback Form</h2>
+    <form action="submit_feedback.php" method="post">
+        <label for="teacherID">Teacher ID:</label>
+        <input type="text" id="teacherID" name="teacherID" required><br><br>
+
+        <label for="studentID">Student ID:</label>
+        <input type="text" id="studentID" name="studentID" required><br><br>
+
+        <h3>Please rate the teacher's performance in each course:</h3>
+        <p>
+            <label for="teachingQuality">Teaching Quality:</label>
+            <select name="teachingQuality">
+                <option value="1">Poor</option>
+                <option value="2">Below Average</option>
+                <option value="3">Average</option>
+                <option value="4">Good</option>
+                <option value="5">Excellent</option>
+            </select>
+        </p>
+        <p>
+            <label for="courseContent">Course Content:</label>
+            <select name="courseContent">
+                <option value="1">Poor</option>
+                <option value="2">Below Average</option>
+                <option value="3">Average</option>
+                <option value="4">Good</option>
+                <option value="5">Excellent</option>
+            </select>
+        </p>
+        <p>
+            <label for="communication">Communication:</label>
+            <select name="communication">
+                <option value="1">Poor</option>
+                <option value="2">Below Average</option>
+                <option value="3">Average</option>
+                <option value="4">Good</option>
+                <option value="5">Excellent</option>
+            </select>
+        </p>
+        <p>
+            <label for="availability">Availability:</label>
+            <select name="availability">
+                <option value="1">Poor</option>
+                <option value="2">Below Average</option>
+                <option value="3">Average</option>
+                <option value="4">Good</option>
+                <option value="5">Excellent</option>
+            </select>
+        </p>
+
+        <label for="comments">Comments:</label>
+        <textarea id="comments" name="comments"></textarea><br><br>
+
+        <input type="submit" value="Submit Feedback">
+    </form>
+</body>
+</html>
